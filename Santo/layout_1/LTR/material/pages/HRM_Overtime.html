@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Human Resource Management</title>
+
+  <!-- Global stylesheets -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"
+    type="text/css" />
+  <link href="../../../../global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/layout.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/components.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/colors.min.css" rel="stylesheet" type="text/css" />
+  <!-- /global stylesheets -->
+
+  <!-- Core JS files -->
+  <script src="../../../../global_assets/js/main/jquery.min.js"></script>
+  <script src="../../../../global_assets/js/main/bootstrap.bundle.min.js"></script>
+  <script src="../../../../global_assets/js/plugins/loaders/blockui.min.js"></script>
+  <script src="../../../../global_assets/js/plugins/ui/ripple.min.js"></script>
+  <!-- /core JS files -->
+
+  <!-- Theme JS files -->
+  <script src="../../../../global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+  <script src="../../../../global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+  <script src="../../../../global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+  <script src="../../../../global_assets/js/plugins/ui/moment/moment.min.js"></script>
+  <script src="../../../../global_assets/js/plugins/pickers/daterangepicker.js"></script>
+
+  <script src="assets/js/app.js"></script>
+  <script src="../../../../global_assets/js/demo_pages/dashboard.js"></script>
+  <script src="../../../../global_assets/js/demo_charts/pages/dashboard/light/streamgraph.js"></script>
+  <script src="../../../../global_assets/js/demo_charts/pages/dashboard/light/sparklines.js"></script>
+  <script src="../../../../global_assets/js/demo_charts/pages/dashboard/light/lines.js"></script>
+  <script src="../../../../global_assets/js/demo_charts/pages/dashboard/light/areas.js"></script>
+  <script src="../../../../global_assets/js/demo_charts/pages/dashboard/light/donuts.js"></script>
+  <script src="../../../../global_assets/js/demo_charts/pages/dashboard/light/bars.js"></script>
+  <script src="../../../../global_assets/js/demo_charts/pages/dashboard/light/progress.js"></script>
+  <script src="../../../../global_assets/js/demo_charts/pages/dashboard/light/heatmaps.js"></script>
+  <script src="../../../../global_assets/js/demo_charts/pages/dashboard/light/pies.js"></script>
+  <script src="../../../../global_assets/js/demo_charts/pages/dashboard/light/bullets.js"></script>
+  <!-- /theme JS files -->
+</head>
+
+<body>
+  <!-- Main navbar -->
+  <div class="navbar navbar-expand-md navbar-dark bg-indigo navbar-static">
+    <div class="navbar-brand">
+      <a href="HRM_index.html" class="d-inline-block">
+        <img src="../../../../global_assets/images/logo_light.png" alt="" />
+        <!-- <h1 style="color: white">HRM</h1> -->
+      </a>
+    </div>
+
+    <div class="d-md-none">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+        <i class="icon-tree5"></i>
+      </button>
+      <button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+        <i class="icon-paragraph-justify3"></i>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-mobile">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="#" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
+            <i class="icon-paragraph-justify3"></i>
+          </a>
+        </li>
+      </ul>
+
+      <span class="navbar-text ml-md-3">
+        <!-- <span class="badge badge-mark border-orange-300 mr-2"></span> -->
+        <h5>Human Resource Management</h5>
+      </span>
+      <!-- Search field
+        <div class="d-flex justify-content-between px-lg-3 px-md-2">
+          <form action="#">
+            <div class="input-group mb-3">
+              <div class="form-group-feedback form-group-feedback-left">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  value=""
+                  placeholder="Search"
+                />
+                <div class="form-control-feedback form-control-feedback-lg">
+                  <i class="icon-search4 text-muted"></i>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div> -->
+      <!-- /search field -->
+      <ul class="navbar-nav ml-md-auto">
+        <li class="nav-item dropdown">
+          <a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
+            <i class="icon-make-group mr-2"></i>
+            Connect
+          </a>
+
+          <!-- <div
+              class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-350"
+            >
+              <div class="dropdown-content-body p-2">
+                <div class="row no-gutters">
+                  <div class="col-12 col-sm-4">
+                    <a
+                      href="#"
+                      class="d-block text-default text-center ripple-dark rounded p-3"
+                    >
+                      <i class="icon-github4 icon-2x"></i>
+                      <div
+                        class="font-size-sm font-weight-semibold text-uppercase mt-2"
+                      >
+                        Github
+                      </div>
+                    </a>
+
+                    <a
+                      href="#"
+                      class="d-block text-default text-center ripple-dark rounded p-3"
+                    >
+                      <i class="icon-dropbox text-blue-400 icon-2x"></i>
+                      <div
+                        class="font-size-sm font-weight-semibold text-uppercase mt-2"
+                      >
+                        Dropbox
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-12 col-sm-4">
+                    <a
+                      href="#"
+                      class="d-block text-default text-center ripple-dark rounded p-3"
+                    >
+                      <i class="icon-dribbble3 text-pink-400 icon-2x"></i>
+                      <div
+                        class="font-size-sm font-weight-semibold text-uppercase mt-2"
+                      >
+                        Dribbble
+                      </div>
+                    </a>
+
+                    <a
+                      href="#"
+                      class="d-block text-default text-center ripple-dark rounded p-3"
+                    >
+                      <i class="icon-google-drive text-success-400 icon-2x"></i>
+                      <div
+                        class="font-size-sm font-weight-semibold text-uppercase mt-2"
+                      >
+                        Drive
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-12 col-sm-4">
+                    <a
+                      href="#"
+                      class="d-block text-default text-center ripple-dark rounded p-3"
+                    >
+                      <i class="icon-twitter text-info-400 icon-2x"></i>
+                      <div
+                        class="font-size-sm font-weight-semibold text-uppercase mt-2"
+                      >
+                        Twitter
+                      </div>
+                    </a>
+
+                    <a
+                      href="#"
+                      class="d-block text-default text-center ripple-dark rounded p-3"
+                    >
+                      <i class="icon-youtube text-danger icon-2x"></i>
+                      <div
+                        class="font-size-sm font-weight-semibold text-uppercase mt-2"
+                      >
+                        Youtube
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+        </li>
+
+        <li class="nav-item dropdown">
+          <a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
+            <i class="icon-pulse2 mr-2"></i>
+            Activity
+          </a>
+
+          <div class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-350">
+            <div class="dropdown-content-header">
+              <span class="font-size-sm line-height-sm text-uppercase font-weight-semibold">Latest activity</span>
+              <a href="#" class="text-default"><i class="icon-search4 font-size-base"></i></a>
+            </div>
+
+            <div class="dropdown-content-body dropdown-scrollable">
+              <ul class="media-list">
+                <li class="media">
+                  <div class="mr-3">
+                    <a href="#" class="btn bg-success-400 rounded-round btn-icon"><i class="icon-mention"></i></a>
+                  </div>
+
+                  <div class="media-body">
+                    <a href="#">Taylor Swift</a> mentioned you in a post
+                    "Angular JS. Tips and tricks"
+                    <div class="font-size-sm text-muted mt-1">
+                      4 minutes ago
+                    </div>
+                  </div>
+                </li>
+
+                <li class="media">
+                  <div class="mr-3">
+                    <a href="#" class="btn bg-pink-400 rounded-round btn-icon"><i class="icon-paperplane"></i></a>
+                  </div>
+
+                  <div class="media-body">
+                    Special offers have been sent to subscribed users by
+                    <a href="#">Donna Gordon</a>
+                    <div class="font-size-sm text-muted mt-1">
+                      36 minutes ago
+                    </div>
+                  </div>
+                </li>
+
+                <li class="media">
+                  <div class="mr-3">
+                    <a href="#" class="btn bg-blue rounded-round btn-icon"><i class="icon-plus3"></i></a>
+                  </div>
+
+                  <div class="media-body">
+                    <a href="#">Chris Arney</a> created a new
+                    <span class="font-weight-semibold">Design</span> branch in
+                    <span class="font-weight-semibold">Limitless</span>
+                    repository
+                    <div class="font-size-sm text-muted mt-1">
+                      2 hours ago
+                    </div>
+                  </div>
+                </li>
+
+                <li class="media">
+                  <div class="mr-3">
+                    <a href="#" class="btn bg-purple-300 rounded-round btn-icon"><i class="icon-truck"></i></a>
+                  </div>
+
+                  <div class="media-body">
+                    Shipping cost to the Netherlands has been reduced,
+                    database updated
+                    <div class="font-size-sm text-muted mt-1">
+                      Feb 8, 11:30
+                    </div>
+                  </div>
+                </li>
+
+                <li class="media">
+                  <div class="mr-3">
+                    <a href="#" class="btn bg-warning-400 rounded-round btn-icon"><i class="icon-comment"></i></a>
+                  </div>
+
+                  <div class="media-body">
+                    New review received on
+                    <a href="#">Server side integration</a> services
+                    <div class="font-size-sm text-muted mt-1">
+                      Feb 2, 10:20
+                    </div>
+                  </div>
+                </li>
+
+                <li class="media">
+                  <div class="mr-3">
+                    <a href="#" class="btn bg-teal-400 rounded-round btn-icon"><i class="icon-spinner11"></i></a>
+                  </div>
+
+                  <div class="media-body">
+                    <strong>January, 2018</strong> - 1320 new users, 3284
+                    orders, $49,390 revenue
+                    <div class="font-size-sm text-muted mt-1">
+                      Feb 1, 05:46
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="dropdown-content-footer bg-light">
+              <a href="#" class="font-size-sm line-height-sm text-uppercase font-weight-semibold text-grey mr-auto">All
+                activity</a>
+              <div>
+                <a href="#" class="text-grey" data-popup="tooltip" title="Clear list"><i
+                    class="icon-checkmark3"></i></a>
+                <a href="#" class="text-grey ml-2" data-popup="tooltip" title="Settings"><i class="icon-gear"></i></a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="navbar-nav-link">
+            <i class="icon-switch2"></i>
+            <span class="d-md-none ml-2">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- /main navbar -->
+
+  <!-- Page content -->
+  <div class="page-content">
+    <!-- Main sidebar -->
+    <div class="sidebar sidebar-light sidebar-main sidebar-expand-md">
+      <!-- Sidebar mobile toggler -->
+      <div class="sidebar-mobile-toggler text-center">
+        <a href="#" class="sidebar-mobile-main-toggle">
+          <i class="icon-arrow-left8"></i>
+        </a>
+        <span class="font-weight-semibold">Navigation</span>
+        <a href="#" class="sidebar-mobile-expand">
+          <i class="icon-screen-full"></i>
+          <i class="icon-screen-normal"></i>
+        </a>
+      </div>
+      <!-- /sidebar mobile toggler -->
+
+      <!-- Sidebar content -->
+      <div class="sidebar-content">
+        <!-- User menu -->
+        <div class="sidebar-user-material">
+          <div class="sidebar-user-material-body">
+            <div class="card-body text-center">
+              <a href="#">
+                <img src="../../../../global_assets/images/placeholders/placeholder.jpg"
+                  class="img-fluid rounded-circle shadow-1 mb-3" width="80" height="80" alt="" />
+              </a>
+              <h6 class="mb-0 text-white text-shadow-dark">
+                Hasibul Islam Santo
+              </h6>
+              <span class="font-size-sm text-white text-shadow-dark">Pondit, Uttara, Dhaka</span>
+            </div>
+
+            <div class="sidebar-user-material-footer">
+              <a href="#user-nav"
+                class="d-flex justify-content-between align-items-center text-shadow-dark dropdown-toggle"
+                data-toggle="collapse"><span>My account</span></a>
+            </div>
+          </div>
+
+          <div class="collapse" id="user-nav">
+            <ul class="nav nav-sidebar">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="icon-user-plus"></i>
+                  <span>My profile</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="icon-coins"></i>
+                  <span>My balance</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="icon-comment-discussion"></i>
+                  <span>Messages</span>
+                  <span class="badge bg-teal-400 badge-pill align-self-center ml-auto">58</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="icon-cog5"></i>
+                  <span>Account settings</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="icon-switch2"></i>
+                  <span>Logout</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /user menu -->
+
+        <!-- Main navigation -->
+        <div class="card card-sidebar-mobile">
+          <ul class="nav nav-sidebar" data-nav-type="accordion">
+            <!-- Main -->
+            <li class="nav-item-header">
+              <div class="text-uppercase font-size-xs line-height-xs">
+                Main
+              </div>
+              <i class="icon-menu" title="Main"></i>
+            </li>
+            <li class="nav-item">
+              <a href="HRM_index.html" class="nav-link active">
+                <i class="icon-home4"></i>
+                <span> Dashboard </span>
+              </a>
+            </li>
+            <!-- Employee  -->
+            <li class="nav-item-header">
+              <div class="text-uppercase font-size-xs line-height-xs">
+                Employees
+              </div>
+              <i class="icon-menu" title="Main"></i>
+            </li>
+
+            <li class="nav-item nav-item-submenu">
+              <a href="index.html" class="nav-link"><i class="icon-user"></i> <span>Employees</span></a>
+
+              <ul class="nav nav-group-sub" data-submenu-title="Layouts">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link active">All Employees</a>
+                </li>
+                <li class="nav-item">
+                  <a href="holiday.html" class="nav-link">Holidays</a>
+                </li>
+                <li class="nav-item">
+                  <a href="leaveadmin.html" class="nav-link">Leaves(Admin)</a>
+                </li>
+                <li class="nav-item">
+                  <a href="leaveemployee.html" class="nav-link">Leaves(Employee)</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../../../layout_2/LTR/material/full/index.html" class="nav-link">Leave Setings</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../../../layout_2/LTR/material/full/index.html" class="nav-link">Attendance(Admin)</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../../../layout_2/LTR/material/full/index.html" class="nav-link">Attendance(Employee)</a>
+                </li>
+                <li class="nav-item">
+                  <a href="department.html" class="nav-link">Departments</a>
+                </li>
+                <li class="nav-item">
+                  <a href="designation.html" class="nav-link">Designations</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../../../layout_2/LTR/material/full/index.html" class="nav-link">Timesheet</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../../../layout_2/LTR/material/full/index.html" class="nav-link">Shift & Schedule</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../../../layout_2/LTR/material/full/index.html" class="nav-link">Overtime</a>
+                </li>
+              </ul>
+            </li><!-- clients  -->
+            <li class="nav-item"><a href="index.html" class="nav-link"><i class="icon-users4"></i>
+                <span>Clients</span></a></li>
+
+            <!-- Projects  -->
+            <li class="nav-item nav-item-submenu">
+              <a href="index.html" class="nav-link"><i class="icon-presentation"></i> <span>Projects</span></a>
+
+              <ul class="nav nav-group-sub" data-submenu-title="Layouts">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Projects</a></li>
+                <li class="nav-item"><a href="../../../../layout_2/LTR/material/full/index.html"
+                    class="nav-link">Tasks</a></li>
+                <li class="nav-item"><a href="../../../../layout_2/LTR/material/full/index.html" class="nav-link">Task
+                    Board</a></li>
+
+              </ul>
+            </li>
+
+            <li class="nav-item"><a href="index.html" class="nav-link"><i class="icon-person"></i>
+                <span>Leads</span></a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link"><i class="icon-ticket"></i>
+                <span>Tickets</span></a></li>
+
+
+
+            <!-- HR  -->
+            <li class="nav-item-header">
+              <div class="text-uppercase font-size-xs line-height-xs">HR</div> <i class="icon-menu" title="Main"></i>
+            </li>
+
+            <li class="nav-item nav-item-submenu">
+              <a href="index.html" class="nav-link"><i class="icon-stack"></i> <span>Sales</span></a>
+
+              <ul class="nav nav-group-sub" data-submenu-title="Layouts">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Estimates</a></li>
+                <li class="nav-item"><a href="../../../../layout_2/LTR/material/full/index.html"
+                    class="nav-link">Invoices</a></li>
+                <li class="nav-item"><a href="../../../../layout_2/LTR/material/full/index.html"
+                    class="nav-link">Payments</a></li>
+                <li class="nav-item"><a href="../../../../layout_2/LTR/material/full/index.html"
+                    class="nav-link">Expenses</a></li>
+                <li class="nav-item"><a href="../../../../layout_2/LTR/material/full/index.html"
+                    class="nav-link">Provident Fund</a></li>
+                <li class="nav-item"><a href="../../../../layout_2/LTR/material/full/index.html"
+                    class="nav-link">Taxes</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item nav-item-submenu">
+              <a href="#" class="nav-link"><i class="icon-stack"></i> <span>Accounting</span></a>
+
+              <ul class="nav nav-group-sub" data-submenu-title="Themes">
+                <li class="nav-item"><a href="../../../LTR/default/full/index.html" class="nav-link">Categories</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link active">Budgets</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link active">Budget Expenses</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link active">Budget Revenues</a></li>
+                <!-- <li class="nav-item"><a href="../../../dark/full/index.html" class="nav-link disabled">Dark <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+       <li class="nav-item"><a href="../../../clean/full/index.html" class="nav-link disabled">Clean <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li> -->
+              </ul>
+            </li>
+            <li class="nav-item nav-item-submenu">
+              <a href="#" class="nav-link"><i class="icon-coin-dollar"></i> <span>Payroll</span></a>
+
+              <ul class="nav nav-group-sub" data-submenu-title="Themes">
+                <li class="nav-item"><a href="../../../LTR/default/full/index.html" class="nav-link">Employee Salary</a>
+                </li>
+                <li class="nav-item"><a href="index.html" class="nav-link active">Payslip</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link active">Payroll Items</a></li>
+                <!-- <li class="nav-item"><a href="../../../dark/full/index.html" class="nav-link disabled">Dark <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+       <li class="nav-item"><a href="../../../clean/full/index.html" class="nav-link disabled">Clean <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li> -->
+              </ul>
+            </li>
+
+            <li class="nav-item"><a href="#" class="nav-link"><i class="icon-file-pdf"></i> <span>Policies</span></a>
+            </li>
+
+            <li class="nav-item nav-item-submenu">
+              <a href="#" class="nav-link"><i class="icon-reading"></i> <span>Reports</span></a>
+
+              <ul class="nav nav-group-sub" data-submenu-title="Themes">
+                <li class="nav-item"><a href="../../../LTR/default/full/index.html" class="nav-link">Expense Report</a>
+                </li>
+                <li class="nav-item"><a href="../../../LTR/default/full/index.html" class="nav-link">Invoice Report</a>
+                </li>
+                <li class="nav-item"><a href="../../../LTR/default/full/index.html" class="nav-link">Payments Report</a>
+                </li>
+                <li class="nav-item"><a href="../../../LTR/default/full/index.html" class="nav-link">Project Report</a>
+                </li>
+                <li class="nav-item"><a href="../../../LTR/default/full/index.html" class="nav-link">Task Report</a>
+                </li>
+                <li class="nav-item"><a href="../../../LTR/default/full/index.html" class="nav-link">User Report</a>
+                </li>
+                <li class="nav-item"><a href="../../../LTR/default/full/index.html" class="nav-link">Employee Report</a>
+                </li>
+                <li class="nav-item"><a href="../../../LTR/default/full/index.html" class="nav-link">Payslip Report</a>
+                </li>
+                <li class="nav-item"><a href="../../../LTR/default/full/index.html" class="nav-link">Attendance
+                    Report</a></li>
+                <li class="nav-item"><a href="../../../LTR/default/full/index.html" class="nav-link">Leave Report</a>
+                </li>
+                <li class="nav-item"><a href="../../../LTR/default/full/index.html" class="nav-link">Daily Report</a>
+                  </l>
+                  <!-- <li class="nav-item"><a href="../../../dark/full/index.html" class="nav-link disabled">Dark <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+       <li class="nav-item"><a href="../../../clean/full/index.html" class="nav-link disabled">Clean <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li> -->
+              </ul>
+            </li>
+
+            <!-- Performance  -->
+            <li class="nav-item-header">
+              <div class="text-uppercase font-size-xs line-height-xs">Performance</div> <i class="icon-menu"
+                title="Main"></i>
+            </li>
+            <li class="nav-item nav-item-submenu">
+              <a href="#" class="nav-link"><i class="icon-graduation"></i> <span>Performance</span></a>
+
+              <ul class="nav nav-group-sub" data-submenu-title="Themes">
+                <li class="nav-item"><a href="../../../LTR/default/full/index.html" class="nav-link">Perfromance
+                    Indicator</a></li>
+                <li class="nav-item"><a href="../../../LTR/default/full/index.html" class="nav-link">Perfromance
+                    Review</a></li>
+                <li class="nav-item"><a href="../../../LTR/default/full/index.html" class="nav-link">Perfromance
+                    Appraisal</a></li>
+
+                <!-- <li class="nav-item"><a href="../../../dark/full/index.html" class="nav-link disabled">Dark <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+       <li class="nav-item"><a href="../../../clean/full/index.html" class="nav-link disabled">Clean <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li> -->
+              </ul>
+            </li>
+            <li class="nav-item nav-item-submenu">
+              <a href="#" class="nav-link"><i class="icon-circle-down2"></i> <span>Goals</span></a>
+
+              <ul class="nav nav-group-sub" data-submenu-title="Themes">
+                <li class="nav-item"><a href="../../../LTR/default/full/index.html" class="nav-link">Goal List</a></li>
+                <li class="nav-item"><a href="../../../LTR/default/full/index.html" class="nav-link">Goal Type</a></li>
+                <!-- <li class="nav-item"><a href="../../../dark/full/index.html" class="nav-link disabled">Dark <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+       <li class="nav-item"><a href="../../../clean/full/index.html" class="nav-link disabled">Clean <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li> -->
+              </ul>
+            </li>
+            <li class="nav-item nav-item-submenu">
+              <a href="#" class="nav-link"><i class="icon-reading"></i> <span>Training</span></a>
+
+              <ul class="nav nav-group-sub" data-submenu-title="Themes">
+                <li class="nav-item"><a href="../../../LTR/default/full/index.html" class="nav-link">Training List</a>
+                </li>
+                <li class="nav-item"><a href="../../../LTR/default/full/index.html" class="nav-link">Trainers</a></li>
+                <li class="nav-item"><a href="../../../LTR/default/full/index.html" class="nav-link">Training Type</a>
+                </li>
+                <!-- <li class="nav-item"><a href="../../../dark/full/index.html" class="nav-link disabled">Dark <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+       <li class="nav-item"><a href="../../../clean/full/index.html" class="nav-link disabled">Clean <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li> -->
+              </ul>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="icon-speaker-left"></i>
+                <span>Promotion</span></a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="icon-arrow-right16"></i>
+                <span>Resignation</span></a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="icon-bell-cross"></i>
+                <span>Termination</span></a></li>
+
+            <!-- Administration-->
+            <!-- /main -->
+          </ul>
+        </div>
+        <!-- /main navigation -->
+      </div>
+      <!-- /sidebar content -->
+    </div>
+    <!-- /main sidebar -->
+
+    <!-- Main content -->
+    <div class="content-wrapper">
+      <!-- Page header -->
+      <div class="page-header page-header-light">
+        <div class="page-header-content header-elements-md-inline">
+          <div class="page-title d-flex">
+            <h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Home</span> - Overtime</h4>
+            <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+          </div>
+          <div class="col-auto float-end ms-auto">
+            <a href="#" class="btn add-btn"  data-toggle="modal" data-target="#add_overtime"><i class="fa fa-plus"></i>
+              Add Overtime</a>
+          </div>
+          <!-- <div class="header-elements d-none">
+						<div class="d-flex justify-content-center">
+							<a href="#" class="btn btn-link btn-float font-size-sm font-weight-semibold text-default">
+								<i class="icon-bars-alt text-pink-300"></i>
+								<span>Statistics</span>
+							</a>
+							<a href="#" class="btn btn-link btn-float font-size-sm font-weight-semibold text-default">
+								<i class="icon-calculator text-pink-300"></i>
+								<span>Invoices</span>
+							</a>
+							<a href="#" class="btn btn-link btn-float font-size-sm font-weight-semibold text-default">
+								<i class="icon-calendar5 text-pink-300"></i>
+								<span>Schedule</span>
+							</a>
+						</div>
+					</div> -->
+        </div>
+
+        <div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+          <div class="d-flex">
+            <div class="breadcrumb">
+              <a href="HRM_index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+              <span class="breadcrumb-item active">Overtime</span>
+            </div>
+
+            <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+
+          </div>
+
+          <!-- <div class="header-elements d-none">
+						<div class="breadcrumb justify-content-center">
+							<a href="#" class="breadcrumb-elements-item">
+								<i class="icon-comment-discussion mr-2"></i>
+								Support
+							</a>
+
+							<div class="breadcrumb-elements-item dropdown p-0">
+								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
+									<i class="icon-gear mr-2"></i>
+									Settings
+								</a>
+
+								<div class="dropdown-menu dropdown-menu-right">
+									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
+									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
+									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
+									<div class="dropdown-divider"></div>
+									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+								</div>
+							</div>
+						</div>
+					</div> -->
+        </div>
+      </div>
+      <!-- /page header -->
+
+      <!-- Content area -->
+      <div class="content">
+        <!-- OVERTIME -->
+
+        <div class="row px-md-2 py-md-2 mb-md-3 ml-md-1 m-r-1">
+          <div class="col-md-3 col-sm-6 col-lg-6 col-xl-3">
+            <div class="card">
+              <div class="card-body text-center">
+                <h6>Overtime Employee</h6>
+                <h4>12 <span>this month</span></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-lg-6 col-xl-3">
+            <div class="card">
+              <div class="card-body text-center">
+                <h6>Overtime Hours</h6>
+                <h4>118 <span>this month</span></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-lg-6 col-xl-3">
+            <div class="card">
+              <div class="card-body text-center">
+                <h6>Pending Request</h6>
+                <h4>23</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-lg-6 col-xl-3">
+            <div class="card">
+              <div class="card-body text-center">
+                <h6>Rejected</h6>
+                <h4>5</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- /OVERTIME -->
+        <!-- DOM positioning -->
+        <div class="card px-md-2 py-md-2 mb-md-3 ml-md-1 m-r-1">
+          <table class="table datatable-dom-position">
+            <thead>
+              <tr>
+                <th class="sorting" tabindex="0" aria-controls="overtimecontent" rowspan="1" colspan="1"
+                  aria-label="#: activate to sort column ascending" style="width: 11.8542px">
+                  #
+                </th>
+                <th class="sorting" tabindex="0" aria-controls="overtimecontent" rowspan="1" colspan="1"
+                  aria-label="Name: activate to sort column ascending" style="width: 102.635px">
+                  Name
+                </th>
+                <th class="sorting sorting_asc" tabindex="0" aria-controls="overtimecontent" rowspan="1" colspan="1"
+                  aria-label="OT Date: activate to sort column descending" style="width: 64.4479px"
+                  aria-sort="ascending">
+                  OT Date
+                </th>
+                <th class="text-center sorting" tabindex="0" aria-controls="overtimecontent" rowspan="1" colspan="1"
+                  aria-label="OT Hours: activate to sort column ascending" style="width: 71.6042px">
+                  OT Hours
+                </th>
+                <th class="sorting" tabindex="0" aria-controls="overtimecontent" rowspan="1" colspan="1"
+                  aria-label="OT Type: activate to sort column ascending" style="width: 121.104px">
+                  OT Type
+                </th>
+                <th class="sorting" tabindex="0" aria-controls="overtimecontent" rowspan="1" colspan="1"
+                  aria-label="Description: activate to sort column ascending" style="width: 128.021px">
+                  Description
+                </th>
+                <th class="text-center sorting" tabindex="0" aria-controls="overtimecontent" rowspan="1" colspan="1"
+                  aria-label="Status: activate to sort column ascending" style="width: 93px">
+                  Status
+                </th>
+                <th class="sorting" tabindex="0" aria-controls="overtimecontent" rowspan="1" colspan="1"
+                  aria-label="Approved by: activate to sort column ascending" style="width: 116.01px">
+                  Approved by
+                </th>
+                <th class="text-end sorting" tabindex="0" aria-controls="overtimecontent" rowspan="1" colspan="1"
+                  aria-label="Actions: activate to sort column ascending" style="width: 57.5104px">
+                  Actions
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="odd">
+                <td class="">1</td>
+                <td>
+                  <h4 class="table-avatar blue-link">
+                    <a href="#" class="avatar"><img src="../../../../global_assets/images/placeholders/placeholder.jpg"
+                        alt="picture" class="img-fluid rounded-circle shadow-1 mb-3" width="40" height="40"
+                        alt="" /></a><a href="#" class="">John Doe</a>
+                  </h4>
+                </td>
+                <td class="sorting_1">8 Mar 2019</td>
+                <td class="text-center">2</td>
+                <td>Normal day OT 1.5x</td>
+                <td>Loreum ipsum dollar</td>
+                <td class="text-center">
+                  <div class="action-label">
+                    <a class="btn btn-white btn-sm btn-rounded" href="javascript:void(0);"><i
+                        class="fa fa-dot-circle-o text-purple"></i> New</a>
+                  </div>
+                </td>
+                <td>
+                  <h4 class="table-avatar">
+                    <a href="#" class="avatar avatar-xs"><img
+                        src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="picture"
+                        class="img-fluid rounded-circle shadow-1 mb-3" width="40" height="40" alt="" /></a><a
+                      href="#">Richard Miles</a>
+                  </h4>
+                </td>
+                <td class="text-end">
+                  <div class="dropdown dropdown-action">
+                    <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i
+                        class="material-icons"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_overtime"><i
+                          class="fa fa-pencil m-r-5"></i> Edit</a><a class="dropdown-item" href="#"
+                        data-toggle="modal" data-target="#delete_overtime"><i class="fa fa-trash-o m-r-5"></i>
+                        Delete</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- /DOM positioned -->
+        <!-- Content area -->
+        <!-- Vertical form modal -->
+        <div id="add_overtime" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Add Overtime</h5><button type="button" class="close" data-dismiss="modal"
+                  aria-label="Close"><span aria-hidden="true">×</span></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group"><label>Select Employee <span class="text-danger">*</span></label>
+                    <div><select class="form-control select2-hidden-accessible" id="" name="" data-select2-id="1"
+                        tabindex="-1" aria-hidden="true">
+                        <option value="-" data-select2-id="3">-</option>
+                        <option value="John Doe" data-select2-id="4">John Doe</option>
+                        <option value="Richard Miles" data-select2-id="5">Richard Miles</option>
+                        <option value="John Smith" data-select2-id="6">John Smith</option>
+                      </select><span class="select2 select2-container select2-container--default" dir="ltr"
+                        data-select2-id="2" style="width: auto;"><span class="selection"><span
+                            class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true"
+                            aria-expanded="false" tabindex="0" aria-disabled="false"
+                            aria-labelledby="select2--container"><span class="select2-selection__rendered"
+                              id="select2--container" role="textbox" aria-readonly="true"><span
+                                class="select2-selection__placeholder"></span></span><span
+                              class="select2-selection__arrow" role="presentation"><b
+                                role="presentation"></b></span></span></span><span class="dropdown-wrapper"
+                          aria-hidden="true"></span></span></div>
+                  </div>
+                  <div class="form-group"><label>Overtime Date <span class="text-danger">*</span></label>
+                    <div class="cal-icon">
+                      <div class="v3dp__datepicker">
+                        <!-- <div class="v3dp__input_wrapper"><input type="text" readonly="" class="picker" editable="true"
+                            placeholder="" tabindex="0">
+                          <div class="v3dp__clearable" style="display: none;"><i>x</i></div>
+                        </div> -->
+                        <div class="v3dp__popout" data-v-2e128338=""
+                          style="--popout-column-definition:repeat(3, 1fr); display: none;">
+                          <div class="v3dp__heading" data-v-2e128338=""><button class="v3dp__heading__button"
+                              data-v-2e128338=""><svg class="v3dp__heading__icon" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 6 8" data-v-2e128338="" data-v-2e128338-s="">
+                                <g fill="none" fill-rule="evenodd" data-v-2e128338="" data-v-2e128338-s="">
+                                  <path stroke="none" d="M-9 16V-8h24v24z" data-v-2e128338="" data-v-2e128338-s="">
+                                  </path>
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 0L1 4l4 4"
+                                    data-v-2e128338="" data-v-2e128338-s=""></path>
+                                </g>
+                              </svg></button><span class="v3dp__heading__center" data-v-2e128338="">2020 -
+                              2029</span><button class="v3dp__heading__button" data-v-2e128338=""><svg
+                                class="v3dp__heading__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 8"
+                                data-v-2e128338="" data-v-2e128338-s="">
+                                <g fill="none" fill-rule="evenodd" data-v-2e128338="" data-v-2e128338-s="">
+                                  <path stroke="none" d="M15-8v24H-9V-8z" data-v-2e128338="" data-v-2e128338-s="">
+                                  </path>
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M1 8l4-4-4-4"
+                                    data-v-2e128338="" data-v-2e128338-s=""></path>
+                                </g>
+                              </svg></button></div>
+                          <div class="v3dp__body" data-v-2e128338="">
+                            <!--v-if-->
+                            <div class="v3dp__elements" data-v-2e128338=""><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">2020</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">2021</span></button><button class="selected" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">2022</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">2023</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">2024</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">2025</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">2026</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">2027</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">2028</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338="" data-v-2e128338-s="">2029</span></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="v3dp__popout" headingformat="LLLL yyyy" data-v-2e128338=""
+                          style="--popout-column-definition:repeat(3, 1fr); display: none;">
+                          <div class="v3dp__heading" data-v-2e128338=""><button class="v3dp__heading__button"
+                              data-v-2e128338=""><svg class="v3dp__heading__icon" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 6 8" data-v-2e128338="" data-v-2e128338-s="">
+                                <g fill="none" fill-rule="evenodd" data-v-2e128338="" data-v-2e128338-s="">
+                                  <path stroke="none" d="M-9 16V-8h24v24z" data-v-2e128338="" data-v-2e128338-s="">
+                                  </path>
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 0L1 4l4 4"
+                                    data-v-2e128338="" data-v-2e128338-s=""></path>
+                                </g>
+                              </svg></button><button class="v3dp__heading__center"
+                              data-v-2e128338="">2022</button><button class="v3dp__heading__button"
+                              data-v-2e128338=""><svg class="v3dp__heading__icon" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 6 8" data-v-2e128338="" data-v-2e128338-s="">
+                                <g fill="none" fill-rule="evenodd" data-v-2e128338="" data-v-2e128338-s="">
+                                  <path stroke="none" d="M15-8v24H-9V-8z" data-v-2e128338="" data-v-2e128338-s="">
+                                  </path>
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M1 8l4-4-4-4"
+                                    data-v-2e128338="" data-v-2e128338-s=""></path>
+                                </g>
+                              </svg></button></div>
+                          <div class="v3dp__body" data-v-2e128338="">
+                            <!--v-if-->
+                            <div class="v3dp__elements" data-v-2e128338=""><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">Jan</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">Feb</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">Mar</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">Apr</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">May</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">Jun</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">Jul</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">Aug</span></button><button class="selected" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">Sep</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">Oct</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">Nov</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338="" data-v-2e128338-s="">Dec</span></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="v3dp__popout" data-v-2e128338=""
+                          style="--popout-column-definition:repeat(7, 1fr); display: none;">
+                          <div class="v3dp__heading" data-v-2e128338=""><button class="v3dp__heading__button"
+                              data-v-2e128338=""><svg class="v3dp__heading__icon" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 6 8" data-v-2e128338="" data-v-2e128338-s="">
+                                <g fill="none" fill-rule="evenodd" data-v-2e128338="" data-v-2e128338-s="">
+                                  <path stroke="none" d="M-9 16V-8h24v24z" data-v-2e128338="" data-v-2e128338-s="">
+                                  </path>
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 0L1 4l4 4"
+                                    data-v-2e128338="" data-v-2e128338-s=""></path>
+                                </g>
+                              </svg></button><button class="v3dp__heading__center" data-v-2e128338="">September
+                              2022</button><button class="v3dp__heading__button" data-v-2e128338=""><svg
+                                class="v3dp__heading__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 8"
+                                data-v-2e128338="" data-v-2e128338-s="">
+                                <g fill="none" fill-rule="evenodd" data-v-2e128338="" data-v-2e128338-s="">
+                                  <path stroke="none" d="M15-8v24H-9V-8z" data-v-2e128338="" data-v-2e128338-s="">
+                                  </path>
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M1 8l4-4-4-4"
+                                    data-v-2e128338="" data-v-2e128338-s=""></path>
+                                </g>
+                              </svg></button></div>
+                          <div class="v3dp__body" data-v-2e128338="">
+                            <div class="v3dp__subheading" data-v-2e128338=""><span data-v-2e128338-s="">Mon</span><span
+                                data-v-2e128338-s="">Tue</span><span data-v-2e128338-s="">Wed</span><span
+                                data-v-2e128338-s="">Thu</span><span data-v-2e128338-s="">Fri</span><span
+                                data-v-2e128338-s="">Sat</span><span data-v-2e128338-s="">Sun</span></div>
+                            <hr class="v3dp__divider" data-v-2e128338="">
+                            <div class="v3dp__elements" data-v-2e128338=""><button disabled="" class=""
+                                data-v-2e128338="" data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">29</span></button><button disabled="" class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">30</span></button><button disabled="" class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">31</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">01</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">02</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">03</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">04</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">05</span></button><button class="selected" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">06</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">07</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">08</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">09</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">10</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">11</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">12</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">13</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">14</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">15</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">16</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">17</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">18</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">19</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">20</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">21</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">22</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">23</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">24</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">25</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">26</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">27</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">28</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">29</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">30</span></button><button disabled="" class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">01</span></button><button disabled="" class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338="" data-v-2e128338-s="">02</span></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group"><label>Overtime Hours <span class="text-danger">*</span></label><input
+                      class="form-control" type="text"></div>
+                  <div class="form-group"><label>Description <span class="text-danger">*</span></label><textarea
+                      rows="4" class="form-control"></textarea></div>
+                  <div class="submit-section"><button class="btn btn-primary submit-btn">Submit</button></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /vertical form modal -->
+        <!-- edit modal -->
+
+        <div id="edit_overtime" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Edit Overtime</h5><button type="button" class="close" data-dismiss="modal"
+                  aria-label="Close"><span aria-hidden="true">×</span></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group"><label>Select Employee <span class="text-danger">*</span></label>
+                    <div><select class="form-control select2-hidden-accessible" id="" name="" data-select2-id="7"
+                        tabindex="-1" aria-hidden="true">
+                        <option value="-" data-select2-id="9">-</option>
+                        <option value="John Doe" data-select2-id="10">John Doe</option>
+                        <option value="Richard Miles" data-select2-id="11">Richard Miles</option>
+                        <option value="John Smith" data-select2-id="12">John Smith</option>
+                      </select><span class="select2 select2-container select2-container--default" dir="ltr"
+                        data-select2-id="8" style="width: auto;"><span class="selection"><span
+                            class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true"
+                            aria-expanded="false" tabindex="0" aria-disabled="false"
+                            aria-labelledby="select2--container"><span class="select2-selection__rendered"
+                              id="select2--container" role="textbox" aria-readonly="true"><span
+                                class="select2-selection__placeholder"></span></span><span
+                              class="select2-selection__arrow" role="presentation"><b
+                                role="presentation"></b></span></span></span><span class="dropdown-wrapper"
+                          aria-hidden="true"></span></span></div>
+                  </div>
+                  <div class="form-group"><label>Overtime Date <span class="text-danger">*</span></label>
+                    <div class="cal-icon">
+                      <div class="v3dp__datepicker">
+                        <!-- <div class="v3dp__input_wrapper"><input type="text" readonly="" class="picker" editable="true"
+                            placeholder="" tabindex="0">
+                          <div class="v3dp__clearable" style="display: none;"><i>x</i></div>
+                        </div> -->
+                        <div class="v3dp__popout" data-v-2e128338=""
+                          style="--popout-column-definition:repeat(3, 1fr); display: none;">
+                          <div class="v3dp__heading" data-v-2e128338=""><button class="v3dp__heading__button"
+                              data-v-2e128338=""><svg class="v3dp__heading__icon" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 6 8" data-v-2e128338="" data-v-2e128338-s="">
+                                <g fill="none" fill-rule="evenodd" data-v-2e128338="" data-v-2e128338-s="">
+                                  <path stroke="none" d="M-9 16V-8h24v24z" data-v-2e128338="" data-v-2e128338-s="">
+                                  </path>
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 0L1 4l4 4"
+                                    data-v-2e128338="" data-v-2e128338-s=""></path>
+                                </g>
+                              </svg></button><span class="v3dp__heading__center" data-v-2e128338="">2020 -
+                              2029</span><button class="v3dp__heading__button" data-v-2e128338=""><svg
+                                class="v3dp__heading__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 8"
+                                data-v-2e128338="" data-v-2e128338-s="">
+                                <g fill="none" fill-rule="evenodd" data-v-2e128338="" data-v-2e128338-s="">
+                                  <path stroke="none" d="M15-8v24H-9V-8z" data-v-2e128338="" data-v-2e128338-s="">
+                                  </path>
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M1 8l4-4-4-4"
+                                    data-v-2e128338="" data-v-2e128338-s=""></path>
+                                </g>
+                              </svg></button></div>
+                          <div class="v3dp__body" data-v-2e128338="">
+                            <!--v-if-->
+                            <div class="v3dp__elements" data-v-2e128338=""><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">2020</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">2021</span></button><button class="selected" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">2022</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">2023</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">2024</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">2025</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">2026</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">2027</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">2028</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338="" data-v-2e128338-s="">2029</span></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="v3dp__popout" headingformat="LLLL yyyy" data-v-2e128338=""
+                          style="--popout-column-definition:repeat(3, 1fr); display: none;">
+                          <div class="v3dp__heading" data-v-2e128338=""><button class="v3dp__heading__button"
+                              data-v-2e128338=""><svg class="v3dp__heading__icon" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 6 8" data-v-2e128338="" data-v-2e128338-s="">
+                                <g fill="none" fill-rule="evenodd" data-v-2e128338="" data-v-2e128338-s="">
+                                  <path stroke="none" d="M-9 16V-8h24v24z" data-v-2e128338="" data-v-2e128338-s="">
+                                  </path>
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 0L1 4l4 4"
+                                    data-v-2e128338="" data-v-2e128338-s=""></path>
+                                </g>
+                              </svg></button><button class="v3dp__heading__center"
+                              data-v-2e128338="">2022</button><button class="v3dp__heading__button"
+                              data-v-2e128338=""><svg class="v3dp__heading__icon" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 6 8" data-v-2e128338="" data-v-2e128338-s="">
+                                <g fill="none" fill-rule="evenodd" data-v-2e128338="" data-v-2e128338-s="">
+                                  <path stroke="none" d="M15-8v24H-9V-8z" data-v-2e128338="" data-v-2e128338-s="">
+                                  </path>
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M1 8l4-4-4-4"
+                                    data-v-2e128338="" data-v-2e128338-s=""></path>
+                                </g>
+                              </svg></button></div>
+                          <div class="v3dp__body" data-v-2e128338="">
+                            <!--v-if-->
+                            <div class="v3dp__elements" data-v-2e128338=""><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">Jan</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">Feb</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">Mar</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">Apr</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">May</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">Jun</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">Jul</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">Aug</span></button><button class="selected" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">Sep</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">Oct</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">Nov</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338="" data-v-2e128338-s="">Dec</span></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="v3dp__popout" data-v-2e128338=""
+                          style="--popout-column-definition:repeat(7, 1fr); display: none;">
+                          <div class="v3dp__heading" data-v-2e128338=""><button class="v3dp__heading__button"
+                              data-v-2e128338=""><svg class="v3dp__heading__icon" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 6 8" data-v-2e128338="" data-v-2e128338-s="">
+                                <g fill="none" fill-rule="evenodd" data-v-2e128338="" data-v-2e128338-s="">
+                                  <path stroke="none" d="M-9 16V-8h24v24z" data-v-2e128338="" data-v-2e128338-s="">
+                                  </path>
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 0L1 4l4 4"
+                                    data-v-2e128338="" data-v-2e128338-s=""></path>
+                                </g>
+                              </svg></button><button class="v3dp__heading__center" data-v-2e128338="">September
+                              2022</button><button class="v3dp__heading__button" data-v-2e128338=""><svg
+                                class="v3dp__heading__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 8"
+                                data-v-2e128338="" data-v-2e128338-s="">
+                                <g fill="none" fill-rule="evenodd" data-v-2e128338="" data-v-2e128338-s="">
+                                  <path stroke="none" d="M15-8v24H-9V-8z" data-v-2e128338="" data-v-2e128338-s="">
+                                  </path>
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M1 8l4-4-4-4"
+                                    data-v-2e128338="" data-v-2e128338-s=""></path>
+                                </g>
+                              </svg></button></div>
+                          <div class="v3dp__body" data-v-2e128338="">
+                            <div class="v3dp__subheading" data-v-2e128338=""><span data-v-2e128338-s="">Mon</span><span
+                                data-v-2e128338-s="">Tue</span><span data-v-2e128338-s="">Wed</span><span
+                                data-v-2e128338-s="">Thu</span><span data-v-2e128338-s="">Fri</span><span
+                                data-v-2e128338-s="">Sat</span><span data-v-2e128338-s="">Sun</span></div>
+                            <hr class="v3dp__divider" data-v-2e128338="">
+                            <div class="v3dp__elements" data-v-2e128338=""><button disabled="" class=""
+                                data-v-2e128338="" data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">29</span></button><button disabled="" class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">30</span></button><button disabled="" class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">31</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">01</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">02</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">03</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">04</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">05</span></button><button class="selected" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">06</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">07</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">08</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">09</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">10</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">11</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">12</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">13</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">14</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">15</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">16</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">17</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">18</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">19</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">20</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">21</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">22</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">23</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">24</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">25</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">26</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">27</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">28</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">29</span></button><button class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">30</span></button><button disabled="" class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338=""
+                                  data-v-2e128338-s="">01</span></button><button disabled="" class="" data-v-2e128338=""
+                                data-v-2e128338-s=""><span data-v-2e128338="" data-v-2e128338-s="">02</span></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group"><label>Overtime Hours <span class="text-danger">*</span></label><input
+                      class="form-control" type="text"></div>
+                  <div class="form-group"><label>Description <span class="text-danger">*</span></label><textarea
+                      rows="4" class="form-control"></textarea></div>
+                  <div class="submit-section"><button class="btn btn-primary submit-btn">Submit</button></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!---/edit modal -->
+
+        <!---delete modal -->
+
+        <div class="modal fade" id="delete_overtime" role="dialog">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="form-header">
+                  <h3>Delete Overtime</h3>
+                  <p>Are you sure want to Cancel this?</p>
+                </div>
+                <div class="modal-btn delete-action">
+                  <div class="row">
+                    <div class="col-6"><a href="javascript:void(0);" class="btn btn-primary continue-btn">Delete</a>
+                    </div>
+                    <div class="col-6"><a href="javascript:void(0);" data-dismiss="modal"
+                        class="btn btn-primary cancel-btn">Cancel</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!---/delete modal -->
+        <!-- /content area -->
+    
+ </div>
+      <!-- Footer -->
+      <div class="navbar navbar-expand-lg navbar-light">
+        <div class="text-center d-lg-none w-100">
+          <button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse"
+            data-target="#navbar-footer">
+            <i class="icon-unfold mr-2"></i>
+            Footer
+          </button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-footer">
+          <span class="navbar-text">
+            &copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by
+            <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+          </span>
+
+          <ul class="navbar-nav ml-lg-auto">
+            <li class="nav-item">
+              <a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank"><i
+                  class="icon-lifebuoy mr-2"></i> Support</a>
+            </li>
+            <li class="nav-item">
+              <a href="http://demo.interface.club/limitless/docs/" class="navbar-nav-link" target="_blank"><i
+                  class="icon-file-text2 mr-2"></i> Docs</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov"
+                class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i>
+                  Purchase</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /footer -->
+    </div>
+    <!-- /main content -->
+  </div>
+  <!-- /page content -->
+</body>
+
+</html>
